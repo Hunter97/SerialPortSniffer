@@ -5,16 +5,25 @@
 package serialportsniffer;
 
 import java.io.*;
-import javax.comm.*;
+import javax.comm.SerialPortEventListener;
+import javax.comm.SerialPort;
 import java.util.*;
+import javax.comm.SerialPortEvent;
 
 
 /**
  *
  * @author prwallace
  */
-public class SerialPortSniffer {
+public class SerialPortSniffer implements SerialPortEventListener {
 
+    public void sniff() throws IOException {
+       
+    }
+    @Override
+    public void serialEvent(SerialPortEvent event) {
+        
+    }
     /**
      * @param args the command line arguments
      */
